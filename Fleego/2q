@@ -1,0 +1,6 @@
+#! /bin/sh
+
+for file in $(ls *.exe)
+do
+    readpe $file | grep ".text"
+done
